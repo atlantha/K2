@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 400;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+hr {
+    border-color: white;
+    border-width: 2px;
+    margin: 30px 10px;
+}
+
+ol {
+    list-style-position: outside;
+    margin-left: 15px;
+}
+
+.custom-p-m {
+    padding: 0;
+}
+
+.logo-head,
+.logo-footer {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    transform: rotate(45deg);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none !important;
+}
+
+.nav-item.active .nav-link {
+    color: #ffc107 !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color .3s ease;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+    transition: color .3s ease;
+}
+
+.social-media {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.jumbotron {
+    height: 85vh;
+}
+
+.jumbotron h1 {
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 80px;
+}
+
+.jumbotron a {
+    padding: 10px 30px;
+    color: #ffc107;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid #ffc107;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: all .3s ease;
+}
+
+.jumbotron a span {
+    margin-left: 10px;
+}
+
+.jumbotron a:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    transition: all .3s ease;
+}
+
+.px-1,
+.px-2,
+.px-3,
+.px-4 {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.px-1 a,
+.px-2 a {
+    font-size: 50px;
+    color: #ffffff;
+    padding: 10px 30px;
+    background-color: #ffc107;
+    border: 2px solid #ffc107;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all .3s ease;
+}
+
+.px-1 a:hover,
+.px-2 a:hover {
+    text-decoration: none;
+    color: #ffc107;
+    background-color: transparent;
+    border: 2px solid #ffc107;
+    transition: all .3s ease;
+}
+
+.px-1 {
+    background-image: url('/img/home/arlington-research-kN_kViDchA0-unsplash.jpg');
+}
+
+.px-2 {
+    background-image: url('/img/home/marvin-meyer-SYTO3xs06fU-unsplash.jpg');
+}
+
+.px-3 {
+    background-image: url('/img/about/sincerely-media-ylveRpZ8L1s-unsplash.jpg');
+}
+
+.px-4 {
+    background-image: url('/img/about/windows-eGNLSgazDVU-unsplash.jpg');
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.logo-footer {
+    width: 150px;
+    height: 150px;
+}
+
+.footer .list-group-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .social-media-section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .jumbotron h1,
+    .px-1 a,
+    .px-2 a {
+        font-size: 50px;
+    }
+
+    .custom-tl {
+        margin-top: 30px;
+    }
+
+    .px-3 {
+        order: 0;
+    }
+
+    .custom-order-1 {
+        order: 1;
+    }
+
+    .px-4 {
+        order: 2;
+    }
+
+    .custom-order-2 {
+        order: 3;
+    }
+}
+
+@media (max-width: 512px) {
+
+    .jumbotron h1,
+    .px-1 a,
+    .px-2 a {
+        font-size: 40px;
+    }
+}
+
+.to-top {
+    position: fixed;
+    color: #ffffff;
+    z-index: 1;
+    background-color: #ffc107;
+    left: -50px;
+    top: 50%;
+    padding: 20px 10px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: left .3s ease;
+}
+
+.to-top a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.to-top a::before {
+    content: '^';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.to-top.show {
+    left: 0;
+    transition: left .3s ease;
+}
+
+.jumbotron.child {
+    height: unset;
+    background-image: url('/img/kobu-agency-pvMVecxVoW0-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron.child::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, var(--primary), transparent);
+}
+
+.jumbotron.child h2 {
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-tl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.custom-tl p {
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.best-team img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.info-team {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: -200px;
+    color: #ffffff;
+    background-image: linear-gradient(to top, var(--primary), transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: bottom .5s ease;
+}
+
+.info-team p {
+    font-size: 12px;
+}
+
+.best-team .overlay:hover .info-team {
+    bottom: 0;
+    transition: bottom .5s ease;
+}
+
+.card.products,
+.card.services {
+    border: none;
+    margin-top: 80px;
+}
+
+.card.products .card-body {
+    padding-right: none;
+    padding-left: none;
+}
+
+.card.products .card-body h5,
+.card.products .card-body p {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 700;
+}
+
+.card.products .card-body p {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.d-products {
+    padding: 50px 0;
+    transition: transform 500ms;
+}
+
+.d-products h6,
+.d-products p {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.d-products h6 {
+    letter-spacing: 1px;
+}
+
+.d-products p {
+    font-size: 10px;
+}
+
+.d-products:hover,
+.d-services:hover {
+    transform: scale(1.2);
+    transition: transform 500ms;
+}
+
+.d-products:hover+.card-body h5,
+.d-services:hover+.card-body h5 {
+    color: #ffc107;
+}
+
+.card.services h5 {
+    font-size: 18px;
+}
+
+.card.services .card-body {
+    padding: 10px 0;
+}
+
+.d-services {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    transition: transform 500ms;
+}
+
+.d-services svg {
+    font-size: 60px;
+    color: #969696;
+}
