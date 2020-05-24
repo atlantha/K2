@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/k2-logo-window.png" type="image/x-icon">
-    <title>K2 BUKAN IT</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/app.css">
+    <title>K2 BUKAN IT | @yield('title')</title>
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/all.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body>
     <header id="header" class="header">
-        <nav class="navbar child navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="img/k2-logo-document.png" alt="logo-head"
                         class="logo-head"></a>
@@ -23,17 +23,17 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
+                        <li class="nav-item @yield('home_active')">
+                            <a class="nav-link" href="/">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                        <li class="nav-item @yield('about_active')">
+                            <a class="nav-link" href="{{ route('about') }}">About</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="products.html">Products</a>
+                        <li class="nav-item @yield('products_active')">
+                            <a class="nav-link" href="{{ route('products') }}">Products</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
+                        <li class="nav-item @yield('services_active')">
+                            <a class="nav-link" href="{{ route('services') }}">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Portfolio</a>
@@ -72,96 +72,12 @@
         </nav>
     </header>
     <section id="jumbotron">
-        <div class="jumbotron child jumbotron-fluid bg-primary mb-0">
-            <div class="container">
-                <h2 class="display-4 text-capitalize mb-5">about us</h2>
-            </div>
-        </div>
+    @yield('jumbotron')
     </section>
     <section id="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 custom-p-m px-3"></div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 custom-tl custom-order-1">
-                    <h2 class="text-capitalize mb-4">company overview</h2>
-                    <p>
-                        K2 BUKAN IT is a company engaged in IT that has excellence in dedication, innovative, creative
-                        and full commitment and experience in the field of IT Development. Until now, we have continued
-                        to develop competencies in other products and services needed by the Company, Industry and the
-                        general public.
-                    </p>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 custom-tl custom-order-2">
-                    <h2 class="text-uppercase mb-3">vision</h2>
-                    <p class="text-uppercase">
-                        become the leading company in the innovative and creative fields in indonesia.
-                    </p>
-                    <h2 class="text-uppercase mb-3">mission</h2>
-                    <ol>
-                        <li>innovative and creative in developing leading and competitive applications.</li>
-                        <li>Develop applications that are effective, efficient and easy to use by users.</li>
-                        <li>Develop applications according to the needs of the user and the wider community.</li>
-                        <li>Developing partnerships in the IT field.</li>
-                        <li>Professionalism of individuals and teams in product development and increasing skills and
-                            knowledge in the IT field.</li>
-                    </ol>
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 custom-p-m px-4"></div>
-            </div>
-        </div>
+    @yield('content')
     </section>
-    <section id="best-team" class="best-team" style="margin-top: 100px;">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h1 class="text-capitalize text-center mb-3">a best team</h1>
-                    <p class="text-center" style="font-size: 15px;">
-                        Behind the success of a company must be because of the existence of a team
-                        that is able to work
-                        with solid, innovative and creative. And we have orangutans in their respective fields.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="overlay">
-                        <img src="img/about/team/matheus-ferrero-pg_WCHWSdT8-unsplash.jpg" alt="team-1">
-                        <div class="info-team">
-                            <h6 class="text-uppercase text-center">Susi Similikiti</h6>
-                            <p class="text-center">CEO</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="overlay">
-                        <img src="img/about/team/matheus-ferrero-W7b3eDUb_2I-unsplash.jpg" alt="team-2">
-                        <div class="info-team">
-                            <h6 class="text-uppercase text-center">Tuti Astuti</h6>
-                            <p class="text-capitalize text-center">Designer & Programmer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="overlay">
-                        <img src="img/about/team/michael-dam-mEZ3PoFGs_k-unsplash.jpg" alt="team-3">
-                        <div class="info-team">
-                            <h6 class="text-uppercase text-center">Lailatul Janah</h6>
-                            <p class="text-capitalize text-center">System Analyst & Programmer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 my-4">
-                    <div class="overlay">
-                        <img src="img/about/team/roberto-delgado-webb-AxI9niqj_60-unsplash.jpg" alt="team-4">
-                        <div class="info-team">
-                            <h6 class="text-uppercase text-center">Siti</h6>
-                            <p class="text-capitalize text-center">Software Enginer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @yield('ex-content')
     <footer id="footer" class="footer bg-primary">
         <div class="container-fluid">
             <div class="row">
@@ -233,11 +149,11 @@
     <div class="to-top">
         <a href="#header">top</a>
     </div>
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/all.js"></script>
-    <script src="js/app.js"></script>
+    <script src="{{ asset('js/jquery-3.5.1.js') }}"></script>
+    <script src="{{ asset('js/popper.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+    <script src="{{ asset('js/all.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>
