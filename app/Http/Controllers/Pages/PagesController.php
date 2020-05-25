@@ -101,4 +101,8 @@ class PagesController extends Controller
         ];
         return view('static.services', compact('services'));
     }
+
+    public function porfolio(){
+        return view('static.porfolio');
+    }
 }

@@ -17,3 +17,4 @@ Route::get('/', 'Pages\PagesController@home');
 Route::get('about', 'Pages\PagesController@about')->name('about');
 Route::get('products', 'Pages\PagesController@products')->name('products');
 Route::get('services', 'Pages\PagesController@services')->name('services');
+Route::get('porfolio', 'Pages\PagesController@porfolio')->name('porfolio');
