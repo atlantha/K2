@@ -101,4 +101,37 @@ class PagesController extends Controller
         ];
         return view('static.services', compact('services'));
     }
+
+    public function client(){
+        $client = [
+            [
+                'title' => 'SMP 1 PGRI Kota Tangerang',
+                'icon'  =>'fas fa-desktop'
+            ],
+            [
+                'title' => 'BLACK CAMPAIGN',
+                'icon'  =>'fas fa-desktop'
+            ],
+            [
+                'title' => 'NDRESS APP',
+                'icon'  =>'fas fa-desktop'
+            ],
+            [
+                'title' => 'SMPI IBNU MAJAH BEKASI',
+                'icon'  =>'fas fa-desktop'
+            ],
+            [
+                'title' => 'PT.LESTARI WIJAYA MANDIRI',
+                'icon'  =>'fas fa-desktop'
+            ]
+        ];
+        return view('static.client',compact('client'));
+    } 
+
+
+    public function contact(){
+        return view('static.contact');
+    }
 }
+
+

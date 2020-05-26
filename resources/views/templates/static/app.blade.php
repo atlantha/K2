@@ -38,11 +38,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Portfolio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Our Client</a>
+                        <li class="nav-item @yield('client_active')">
+                        <a class="nav-link" href="{{ route('client') }}">Our Client</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                        <li class="nav-item @yield('contact_active')">
+                        <a class="nav-link" href="{{ route('contact') }}">Contact</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav social-media-section">
