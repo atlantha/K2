@@ -322,7 +322,8 @@ ol {
 }
 
 .card.products,
-.card.services {
+.card.services,
+.card.client {
     border: none;
     margin-top: 80px;
 }
@@ -365,13 +366,15 @@ ol {
 }
 
 .d-products:hover,
-.d-services:hover {
+.d-services:hover,
+.d-client:hover {
     transform: scale(1.2);
     transition: transform 500ms;
 }
 
 .d-products:hover+.card-body h5,
-.d-services:hover+.card-body h5 {
+.d-services:hover+.card-body h5,
+.d-client:hover+.card-body h5 {
     color: #ffc107;
 }
 
@@ -391,6 +394,26 @@ ol {
 }
 
 .d-services svg {
+    font-size: 60px;
+    color: #969696;
+}
+
+.card.client h5 {
+    font-size: 18px;
+}
+
+.card.client .card-body {
+    padding: 10px 0;
+}
+
+.d-client {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    transition: transform 500ms;
+}
+
+.d-client svg {
     font-size: 60px;
     color: #969696;
 }
