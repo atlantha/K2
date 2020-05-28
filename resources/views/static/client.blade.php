@@ -9,15 +9,15 @@
         </div>
 @endsection
 @section('content')
-    <div class="row" style="margin-top: 70px" >
-        @foreach ($client as $data)
+    <div class="row itha" style="margin-top: 70px" >
+        @foreach ($client as $value)
         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-            <div class="card-client">
-                <div class="d-client">
-                    <i class="{{ $data['icon'] }}"></i>
+            <div class="thacard-client">
+                <div class="thad-client">
+                    <i class="{{ $value['gambar'] }}"></i>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title text-capitalize text-center">{{$data['title']}}</h5>
+                <div class="thacard-tha">
+                    <h5 class="thacard-title text-capitalize text-center">{{$value['judul']}}</h5>
                 </div>
             </div>
         </div>

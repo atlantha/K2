@@ -105,24 +105,24 @@ class PagesController extends Controller
     public function client(){
         $client = [
             [
-                'title' => 'SMP 1 PGRI Kota Tangerang',
-                'icon'  =>'fas fa-desktop'
+                'judul' => 'SMP 1 PGRI Kota Tangerang',
+                'gambar'  =>'fas fa-desktop'
             ],
             [
-                'title' => 'BLACK CAMPAIGN',
-                'icon'  =>'fas fa-desktop'
+                'judul' => 'BLACK CAMPAIGN',
+                'gambar'  =>'fas fa-desktop'
             ],
             [
-                'title' => 'NDRESS APP',
-                'icon'  =>'fas fa-desktop'
+                'judul' => 'NDRESS APP',
+                'gambar'  =>'fas fa-desktop'
             ],
             [
-                'title' => 'SMPI IBNU MAJAH BEKASI',
-                'icon'  =>'fas fa-desktop'
+                'judul' => 'SMPI IBNU MAJAH BEKASI',
+                'gambar'  =>'fas fa-desktop'
             ],
             [
-                'title' => 'PT.LESTARI WIJAYA MANDIRI',
-                'icon'  =>'fas fa-desktop'
+                'judul' => 'PT.LESTARI WIJAYA MANDIRI',
+                'gambar'  =>'fas fa-desktop'
             ]
         ];
         return view('static.client',compact('client'));
