@@ -395,7 +395,6 @@ ol {
     color: #969696;
 }
 
-<<<<<<< HEAD
 /* css tha */
 .itha .thad-client:hover+.thacard-tha h5 {
     color: #ffc107;
@@ -424,7 +423,6 @@ ol {
     font-size: 60px;
     color: #969696;
 }
-=======
 .ilham-tombol {
     color: #ff7902;
     text-decoration: none;
@@ -465,4 +463,3 @@ ol {
 .ilham-row.show {
     display: flex;
 }
->>>>>>> 73a3b3fa3ca0b62160dcb9e7c54d0b1a15765cfa
