@@ -89,7 +89,7 @@
                 <div class="col-xl-7 col-lg-7 col-md-6 col-sm-12 mt-3">
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                            <ul class="list-group">
+                            <ul class="list-group"> 
                                 <li class="list-group-item">
                                     <h5>Address</h5>
                                 </li>
