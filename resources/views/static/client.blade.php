@@ -16,7 +16,7 @@
                 <div class="d-client">
                     <i class="{{ $data['icon'] }}"></i>
                 </div>
-                <div class="card-body">
+                <div class="card-tha">
                     <h5 class="card-title text-capitalize text-center">{{$data['title']}}</h5>
                 </div>
             </div>

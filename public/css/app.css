@@ -374,7 +374,7 @@ ol {
 
 .d-products:hover+.card-body h5,
 .d-services:hover+.card-body h5,
-.d-client:hover+.card-body h5 {
+.d-client:hover+.card-tha h5 {
     color: #ffc107;
 }
 
@@ -402,7 +402,7 @@ ol {
     font-size: 18px;
 }
 
-.card.client .card-body {
+.card.client .card-tha {
     padding: 10px 0;
 }
 
