@@ -132,6 +132,9 @@ class PagesController extends Controller
     public function contact(){
         return view('static.contact');
     }
+    public function porfolio(){
+        return view('static.porfolio');
+    }
 }
 
 

@@ -19,3 +19,4 @@ Route::get('products', 'Pages\PagesController@products')->name('products');
 Route::get('services', 'Pages\PagesController@services')->name('services');
 Route::get('client', 'Pages\PagesController@client')->name('client');
 Route::get('contact', 'Pages\PagesController@contact')->name('contact');
+Route::get('porfolio', 'Pages\PagesController@porfolio')->name('porfolio');

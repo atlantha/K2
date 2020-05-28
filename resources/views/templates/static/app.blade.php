@@ -35,8 +35,8 @@
                         <li class="nav-item @yield('services_active')">
                             <a class="nav-link" href="{{ route('services') }}">Services</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                        <li class="nav-item @yield('portfolio_active')">
+                            <a class="nav-link" href="{{ route('porfolio') }}">Portfolio</a>
                         </li>
                         <li class="nav-item @yield('client_active')">
                         <a class="nav-link" href="{{ route('client') }}">Our Client</a>
@@ -154,6 +154,51 @@
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="{{ asset('js/all.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+    
+
+    <script type="text/javascript">
+        $(document).on('click', '.ilham-tombol', function (yuyu) {
+            if(this.hash !== ""){
+                yuyu.preventDefault(); 
+                var a=this.hash;
+                if(a=='#all'){
+                    $(".ilham-all").addClass('show');
+                    $(".ilham-school").removeClass('show');
+                    $(".ilham-cafe").removeClass('show');
+                    $(".ilham-profile").removeClass('show');
+                    $(".ilham-company").removeClass('show');
+                }   
+                if(a=='#school'){
+                    $(".ilham-school").addClass('show');
+                    $(".ilham-all").removeClass('show');
+                    $(".ilham-cafe").removeClass('show');
+                    $(".ilham-profile").removeClass('show');
+                    $(".ilham-company").removeClass('show');
+                }
+                if(a=='#cafe'){
+                    $(".ilham-cafe").addClass('show');
+                    $(".ilham-all").removeClass('show');
+                    $(".ilham-school").removeClass('show');
+                    $(".ilham-profile").removeClass('show');
+                    $(".ilham-company").removeClass('show');
+                }
+                if(a=='#profile'){
+                    $(".ilham-profile").addClass('show');
+                    $(".ilham-all").removeClass('show');
+                    $(".ilham-school").removeClass('show');
+                    $(".ilham-cafe").removeClass('show');
+                    $(".ilham-company").removeClass('show');
+                }
+                if(a=='#company'){
+                    $(".ilham-company").addClass('show');
+                    $(".ilham-all").removeClass('show');
+                    $(".ilham-school").removeClass('show');
+                    $(".ilham-cafe").removeClass('show');
+                    $(".ilham-profile").removeClass('show');
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>
