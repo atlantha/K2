@@ -322,8 +322,7 @@ ol {
 }
 
 .card.products,
-.card.services,
-.itha .card.client {
+.card.services {
     border: none;
     margin-top: 80px;
 }
@@ -366,15 +365,13 @@ ol {
 }
 
 .d-products:hover,
-.d-services:hover,
-.itha .d-client:hover {
+.d-services:hover {
     transform: scale(1.2);
     transition: transform 500ms;
 }
 
 .d-products:hover+.card-body h5,
-.d-services:hover+.card-body h5,
-.itha .d-client:hover+.card-tha h5 {
+.d-services:hover+.card-body h5 {
     color: #ffc107;
 }
 
@@ -396,6 +393,15 @@ ol {
 .d-services svg {
     font-size: 60px;
     color: #969696;
+}
+
+/* css tha */
+.itha .d-client:hover+.card-tha h5 {
+    color: #ffc107;
+}
+.itha .d-client:hover {
+    transform: scale(1.2);
+    transition: transform 500ms;
 }
 
 .itha .card.client h5 {
