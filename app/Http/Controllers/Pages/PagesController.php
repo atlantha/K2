@@ -102,6 +102,7 @@ class PagesController extends Controller
         return view('static.services', compact('services'));
     }
 
+<<<<<<< HEAD
     public function client(){
         $client = [
             [
@@ -131,6 +132,10 @@ class PagesController extends Controller
 
     public function contact(){
         return view('static.contact');
+=======
+    public function porfolio(){
+        return view('static.porfolio');
+>>>>>>> 73a3b3fa3ca0b62160dcb9e7c54d0b1a15765cfa
     }
 }
 
