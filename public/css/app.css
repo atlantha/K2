@@ -323,7 +323,7 @@ ol {
 
 .card.products,
 .card.services,
-.card.client {
+.itha .card.client {
     border: none;
     margin-top: 80px;
 }
@@ -367,14 +367,14 @@ ol {
 
 .d-products:hover,
 .d-services:hover,
-.d-client:hover {
+.itha .d-client:hover {
     transform: scale(1.2);
     transition: transform 500ms;
 }
 
 .d-products:hover+.card-body h5,
 .d-services:hover+.card-body h5,
-.d-client:hover+.card-tha h5 {
+.itha .d-client:hover+.card-tha h5 {
     color: #ffc107;
 }
 
@@ -398,22 +398,22 @@ ol {
     color: #969696;
 }
 
-.card.client h5 {
+.itha .card.client h5 {
     font-size: 18px;
 }
 
-.card.client .card-tha {
+.itha .card.client .card-tha {
     padding: 10px 0;
 }
 
-.d-client {
+.itha .d-client {
     padding: 10px 0;
     display: flex;
     justify-content: center;
     transition: transform 500ms;
 }
 
-.d-client svg {
+.itha .d-client svg {
     font-size: 60px;
     color: #969696;
 }

@@ -9,7 +9,7 @@
         </div>
 @endsection
 @section('content')
-    <div class="row" style="margin-top: 70px" >
+    <div class="row itha" style="margin-top: 70px" >
         @foreach ($client as $data)
         <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
             <div class="card-client">
